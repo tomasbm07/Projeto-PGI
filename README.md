@@ -8,7 +8,7 @@
 
 ## Ideias Inciais
 
-- Guia turístico
+- [x] Guia turístico
   - Usar o gps para determinar localização do user e dar informação sobre pontos de intresse e informação desse local
   - Informação poderia em formato audio quando chegassemos ao local.
  
@@ -17,7 +17,7 @@
   - Garantia de qualidade de serviços.
   - Rankins de prestadores de serviços.
 
-- Guia para começar uma horta
+- [x] Guia para começar uma horta 
   - Informação sobre várias espécies: como plantar, quando, onde, valores nutricionais (quando aplicável).
 
 - Entregas de bens para alunos das residências
@@ -31,7 +31,7 @@
 - Repositorio materiais pra todos os cursos
   - Tem os materiais de anos  anteriores (slides, exames, resoluções...)
   
- - Give-Away Your Items App
+ - [x] Giveaway Your Items App
   - Aplicação que permite vender por valores baixos ou doar artigos que já não se usam
   
  - Serviço lavandaria por marcação
