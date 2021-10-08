@@ -11,7 +11,7 @@
   - Garantia de qualidade de serviços.
   - Rankins de prestadores de serviços.
 
-- Guia para começar uma horta [x] 
+- [x] Guia para começar uma horta 
   - Informação sobre várias espécies: como plantar, quando, onde, valores nutricionais (quando aplicável).
 
 - Entregas de bens para alunos das residências
