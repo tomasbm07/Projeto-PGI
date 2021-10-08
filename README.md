@@ -22,5 +22,12 @@
   - ALunos escolhem a sala e é mostrado um mapa em 3D com as direçoes para a sala-
   - Através de AR e a camera do telemovél
 
-- 
+- Repositorio materiais pra todos os cursos
+  - Tem os materiais de anos  anteriores (slides, exames, resoluções...)
+  
+ - Give-Away Your Items App
+  - Aplicação que permite vender por valores baixos ou doar artigos que já não se usam
+  
+ -Serviço lavandaria por marcação
+   - Aplicação que permite marcar um horário numa das lavandarias UC, permitindo maior eficiência no seu funcionamento
  
