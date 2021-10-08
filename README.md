@@ -1,5 +1,11 @@
 # Projeto-PGI
 
+##### Membros
+ - (1) Tomás Mendes - 2019232272
+ - (2) Alexandre Andrade - 
+ - (3) Joel Oliveira - 
+ - (4) Miguel Pedroso - 
+
 ## Ideias Inciais
 
 - Guia turístico
@@ -28,6 +34,28 @@
  - Give-Away Your Items App
   - Aplicação que permite vender por valores baixos ou doar artigos que já não se usam
   
- -Serviço lavandaria por marcação
+ - Serviço lavandaria por marcação
    - Aplicação que permite marcar um horário numa das lavandarias UC, permitindo maior eficiência no seu funcionamento
+
+
+#### Ideia 1
+Team Members                    | 1 | 2 | 3 | 4 |
+How much you like the ideia?    |   |   |   |   |
+How unique and difenrent is it? |   |   |   |   |
+Can we do it?                   |   |   |   |   |
+
+
+#### Ideia 2
+Team Members                    | 1 | 2 | 3 | 4 |
+How much you like the ideia?    |   |   |   |   |
+How unique and difenrent is it? |   |   |   |   |
+Can we do it?                   |   |   |   |   |
+
+
+#### Ideia 3
+Team Members                    | 1 | 2 | 3 | 4 |
+How much you like the ideia?    |   |   |   |   |
+How unique and difenrent is it? |   |   |   |   |
+Can we do it?                   |   |   |   |   |
+
  
