@@ -2,7 +2,7 @@
 
 ## Ideias Inciais
 
-- Guia turístico
+- [x] Guia turístico
   - Usar o gps para determinar localização do user e dar informação sobre pontos de intresse e informação desse local
   - Informação poderia em formato audio quando chegassemos ao local.
  
@@ -25,7 +25,7 @@
 - Repositorio materiais pra todos os cursos
   - Tem os materiais de anos  anteriores (slides, exames, resoluções...)
   
- - Give-Away Your Items App
+ - [x] Giveaway Your Items App
   - Aplicação que permite vender por valores baixos ou doar artigos que já não se usam
   
  -Serviço lavandaria por marcação
