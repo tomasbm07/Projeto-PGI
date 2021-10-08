@@ -39,23 +39,23 @@
 
 
 #### Ideia 1
-Team Members                    | 1 | 2 | 3 | 4 |
-How much you like the ideia?    |   |   |   |   |
-How unique and difenrent is it? |   |   |   |   |
-Can we do it?                   |   |   |   |   |
+Team Members                    |  1 |  2 |  3 |  4 |
+How much you like the ideia?    | 00 | 00 | 00 | 00 |
+How unique and difenrent is it? | 00 | 00 | 00 | 00 |
+Can we do it?                   | 00 | 00 | 00 | 00 |
 
 
 #### Ideia 2
-Team Members                    | 1 | 2 | 3 | 4 |
-How much you like the ideia?    |   |   |   |   |
-How unique and difenrent is it? |   |   |   |   |
-Can we do it?                   |   |   |   |   |
+Team Members                    |  1 |  2 |  3 |  4 |
+How much you like the ideia?    | 00 | 00 | 00 | 00 |
+How unique and difenrent is it? | 00 | 00 | 00 | 00 |
+Can we do it?                   | 00 | 00 | 00 | 00 |
 
 
 #### Ideia 3
-Team Members                    | 1 | 2 | 3 | 4 |
-How much you like the ideia?    |   |   |   |   |
-How unique and difenrent is it? |   |   |   |   |
-Can we do it?                   |   |   |   |   |
+Team Members                    |  1 |  2 |  3 |  4 |
+How much you like the ideia?    | 00 | 00 | 00 | 00 |
+How unique and difenrent is it? | 00 | 00 | 00 | 00 |
+Can we do it?                   | 00 | 00 | 00 | 00 |
 
  
