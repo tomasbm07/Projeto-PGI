@@ -2,7 +2,7 @@
 
 ##### Membros
  - (1) Tomás Mendes - 2019232272
- - (2) Alexandre Andrade - 
+ - (2) Alexandre Andrade - 2019220216
  - (3) Joel Oliveira - 
  - (4) Miguel Pedroso - 
 
@@ -41,24 +41,24 @@
 #### Guia para horta
 |Team Members                    |  1 |  2 |  3 |  4 |
 |--------------------------------|----|----|----|----|
-|How much you like the ideia?    | 7 | 00 | 00 | 00 |
-|How unique and different is it? | 5 | 00 | 00 | 00 |
-|Can we do it?                   | 9 | 00 | 00 | 00 |
+|How much you like the ideia?    | 7 | 10 | 00 | 00 |
+|How unique and different is it? | 5 | 6 | 00 | 00 |
+|Can we do it?                   | 9 | 7 | 00 | 00 |
 
 
 #### Guia turístico
 |Team Members                    |  1 |  2 |  3 |  4 |
 |--------------------------------|----|----|----|----|
-|How much you like the ideia?    | 8 | 00 | 00 | 00 |
-|How unique and different is it? | 5 | 00 | 00 | 00 |
-|Can we do it?                   | 6 | 00 | 00 | 00 |
+|How much you like the ideia?    | 8 | 8 | 00 | 00 |
+|How unique and different is it? | 5 | 9 | 00 | 00 |
+|Can we do it?                   | 6 | 4 | 00 | 00 |
 
 
 #### App de giveaways
 |Team Members                    |  1 |  2 |  3 |  4 |
 |--------------------------------|----|----|----|----|
-|How much you like the ideia?    | 6 | 00 | 00 | 00 |
-|How unique and different is it? | 4 | 00 | 00 | 00 |
-|Can we do it?                   | 8 | 00 | 00 | 00 |
+|How much you like the ideia?    | 6 | 6 | 00 | 00 |
+|How unique and different is it? | 4 | 3 | 00 | 00 |
+|Can we do it?                   | 8 | 10 | 00 | 00 |
 
  
