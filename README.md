@@ -4,7 +4,7 @@
  - (1) Tomás Mendes - 2019232272
  - (2) Alexandre Andrade - 2019220216
  - (3) Joel Oliveira - 
- - (4) Miguel Pedroso - 
+ - (4) Miguel Pedroso - 2019218176
 
 ## Ideias Inciais
 
