@@ -41,24 +41,24 @@
 #### Guia para horta
 |Team Members                    |  1 |  2 |  3 |  4 |
 |--------------------------------|----|----|----|----|
-|How much you like the ideia?    | 7 | 10 | 8 | 00 |
-|How unique and different is it? | 5 | 6 | 6 | 00 |
-|Can we do it?                   | 9 | 7 | 8 | 00 |
+|How much you like the ideia?    | 7 | 10 | 8 | 8 |
+|How unique and different is it? | 5 | 6 | 6 | 6 |
+|Can we do it?                   | 9 | 7 | 8 | 7 |
 
 
 #### Guia turístico
 |Team Members                    |  1 |  2 |  3 |  4 |
 |--------------------------------|----|----|----|----|
-|How much you like the ideia?    | 8 | 8 | 8 | 00 |
-|How unique and different is it? | 5 | 9 | 8 | 00 |
-|Can we do it?                   | 6 | 4 | 5 | 00 |
+|How much you like the ideia?    | 8 | 8 | 8 | 8 |
+|How unique and different is it? | 5 | 9 | 8 | 5 |
+|Can we do it?                   | 6 | 4 | 5 | 5 |
 
 
 #### App de giveaways
 |Team Members                    |  1 |  2 |  3 |  4 |
 |--------------------------------|----|----|----|----|
-|How much you like the ideia?    | 6 | 6 | 6 | 00 |
-|How unique and different is it? | 4 | 3 | 4 | 00 |
-|Can we do it?                   | 8 | 10 | 8 | 00 |
+|How much you like the ideia?    | 6 | 6 | 6 | 7 |
+|How unique and different is it? | 4 | 3 | 4 | 4 |
+|Can we do it?                   | 8 | 10 | 8 | 8 |
 
  
