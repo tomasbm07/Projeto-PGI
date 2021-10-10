@@ -38,27 +38,27 @@
    - Aplicação que permite marcar um horário numa das lavandarias UC, permitindo maior eficiência no seu funcionamento
 
 
-#### Ideia 1
+#### Guia para horta
 |Team Members                    |  1 |  2 |  3 |  4 |
 |--------------------------------|----|----|----|----|
-|How much you like the ideia?    | 00 | 00 | 00 | 00 |
-|How unique and different is it? | 00 | 00 | 00 | 00 |
-|Can we do it?                   | 00 | 00 | 00 | 00 |
+|How much you like the ideia?    | 7 | 00 | 00 | 00 |
+|How unique and different is it? | 5 | 00 | 00 | 00 |
+|Can we do it?                   | 9 | 00 | 00 | 00 |
 
 
-#### Ideia 2
+#### Guia turístico
 |Team Members                    |  1 |  2 |  3 |  4 |
 |--------------------------------|----|----|----|----|
-|How much you like the ideia?    | 00 | 00 | 00 | 00 |
-|How unique and different is it? | 00 | 00 | 00 | 00 |
-|Can we do it?                   | 00 | 00 | 00 | 00 |
+|How much you like the ideia?    | 8 | 00 | 00 | 00 |
+|How unique and different is it? | 5 | 00 | 00 | 00 |
+|Can we do it?                   | 6 | 00 | 00 | 00 |
 
 
-#### Ideia 3
+#### App de giveaways
 |Team Members                    |  1 |  2 |  3 |  4 |
 |--------------------------------|----|----|----|----|
-|How much you like the ideia?    | 00 | 00 | 00 | 00 |
-|How unique and different is it? | 00 | 00 | 00 | 00 |
-|Can we do it?                   | 00 | 00 | 00 | 00 |
+|How much you like the ideia?    | 6 | 00 | 00 | 00 |
+|How unique and different is it? | 4 | 00 | 00 | 00 |
+|Can we do it?                   | 8 | 00 | 00 | 00 |
 
  
