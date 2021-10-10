@@ -42,7 +42,7 @@
 |Team Members                    |  1 |  2 |  3 |  4 |
 |--------------------------------|----|----|----|----|
 |How much you like the ideia?    | 00 | 00 | 00 | 00 |
-|How unique and difenrent is it? | 00 | 00 | 00 | 00 |
+|How unique and different is it? | 00 | 00 | 00 | 00 |
 |Can we do it?                   | 00 | 00 | 00 | 00 |
 
 
@@ -50,7 +50,7 @@
 |Team Members                    |  1 |  2 |  3 |  4 |
 |--------------------------------|----|----|----|----|
 |How much you like the ideia?    | 00 | 00 | 00 | 00 |
-|How unique and difenrent is it? | 00 | 00 | 00 | 00 |
+|How unique and different is it? | 00 | 00 | 00 | 00 |
 |Can we do it?                   | 00 | 00 | 00 | 00 |
 
 
@@ -58,7 +58,7 @@
 |Team Members                    |  1 |  2 |  3 |  4 |
 |--------------------------------|----|----|----|----|
 |How much you like the ideia?    | 00 | 00 | 00 | 00 |
-|How unique and difenrent is it? | 00 | 00 | 00 | 00 |
+|How unique and different is it? | 00 | 00 | 00 | 00 |
 |Can we do it?                   | 00 | 00 | 00 | 00 |
 
  
