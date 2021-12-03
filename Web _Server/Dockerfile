@@ -8,9 +8,9 @@ ENV DEBUG 0
 
 COPY . .
 
-WORKDIR /Server
-
 RUN pip install -r requirements.txt
+
+WORKDIR /Server
 
 #RUN adduser -D myuser
 #USER myuser
