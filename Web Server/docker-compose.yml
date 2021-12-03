@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  
+  web_pgi:
+    build: ./Server
+    container_name: web
+    volumes: 
+      - ./Server:/Server
+    #env_file: .env
+    #restart: unless-stopped
+    ports:
+      - "8050:8050"
+
+
