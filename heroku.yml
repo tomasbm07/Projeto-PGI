@@ -3,7 +3,8 @@ build:
     web: Web_Server/Dockerfile
 
 run:
-  web: gunicorn --bind :$PORT --pythonpath Web_Server/Server projeto_pgi.wsgi
+  #web: gunicorn --bind :$PORT --pythonpath Web_Server/Server projeto_pgi.wsgi
+  web: python manage.py runserver :$PORT
 
 release:
   image: web
