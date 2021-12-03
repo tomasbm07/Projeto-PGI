@@ -16,7 +16,7 @@ SECRET_KEY = 'django-insecure-zljx7dimmg49#+0&l$xd9%!xib!e11k#z54pb3*iuz&09&=sw_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'web-pgi.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', '0.0.0.0', 'web-pgi.herokuapp.com']
 
 
 # Application definition
@@ -110,7 +110,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 
-STATIC_URL = "/static/"
+STATIC_URL = "/static"
 
 STATIC_ROOT = "static"
 
