@@ -10,7 +10,7 @@ COPY . .
 
 RUN pip install -r requirements.txt
 
-WORKDIR /Server
+WORKDIR /Web_Server/Server
 
 RUN adduser -D myuser
 USER myuser
