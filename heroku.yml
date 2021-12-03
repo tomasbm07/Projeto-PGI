@@ -1,10 +1,10 @@
 build:
   docker:
-    web_pgi: Web_Server/Dockerfile
+    web: Web_Server/Dockerfile
 
 run:
-  web_pgi: gunicorn --bind :$PORT --pythonpath Web_Server/Server projeto_pgi.wsgi
+  web: gunicorn --bind :$PORT --pythonpath Web_Server/Server projeto_pgi.wsgi
 
 release:
-  image: web_pgi
+  image: web
 
