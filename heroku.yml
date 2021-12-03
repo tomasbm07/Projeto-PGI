@@ -3,8 +3,8 @@ build:
     web: Dockerfile
 
 run:
-  web: gunicorn --bind :$PORT --pythonpath Web_Server/Server projeto_pgi.wsgi
-  #web: python manage.py runserver :$PORT
+  #web: gunicorn --bind :$PORT --pythonpath Web_Server/Server projeto_pgi.wsgi
+  web: python Web_Server/Server/manage.py runserver $PORT
 
 release:
   image: web
