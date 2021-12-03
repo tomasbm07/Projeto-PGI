@@ -4,7 +4,7 @@ services:
   
   web_pgi:
     build: ./Server
-    container_name: web
+    container_name: web_pgi
     volumes: 
       - ./Server:/Server
     #env_file: .env
