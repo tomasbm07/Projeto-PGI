@@ -1,10 +1,10 @@
 build:
   docker:
-    web: Dockerfile
-
-run:
-  #web: gunicorn --bind :$PORT --pythonpath Web_Server/Server projeto_pgi.wsgi
-  web: python Web_Server/Server/manage.py runserver $PORT
+    worker: Dockerfile
 
 release:
-  image: web
+  image: worker
+
+run:
+  worker: gunicorn --bind :$PORT --pythonpath Web_Server/Server projeto_pgi.wsgi
+  #worker: python Web_Server/Server/manage.py runserver $PORT
