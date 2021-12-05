@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PGI_app">
         <activity
+            android:name=".PlantPage"
+            android:exported="false"
+            android:label="@string/title_activity_plant_page"
+            android:theme="@style/Theme.PGI_app.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.Design.NoActionBar">
