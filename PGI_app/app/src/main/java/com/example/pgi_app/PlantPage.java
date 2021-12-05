@@ -1,5 +1,6 @@
 package com.example.pgi_app;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -7,7 +8,10 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
+import androidx.appcompat.widget.Toolbar;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -15,37 +19,38 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.example.pgi_app.databinding.ActivityPlantPageBinding;
 
-public class PlantPage extends AppCompatActivity {
+import java.io.Serializable;
+
+public class PlantPage extends AppCompatActivity  {
 
     private AppBarConfiguration appBarConfiguration;
-    private ActivityPlantPageBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityPlantPageBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        Intent i = getIntent();
+        Planta p = (Planta) ((Intent) i).getSerializableExtra("sampleObject");
 
-        setSupportActionBar(binding.toolbar);
+        TextView description = (TextView) findViewById(R.id.textView2);
+        description.setText(p.getDescription());
+        TextView cuidados = (TextView) findViewById(R.id.textView4);
+        cuidados.setText(p.getCuidados());
+        TextView nutricional = (TextView) findViewById(R.id.textView6);
+        float nutriValues[] = p.getNutriValues();
+        String buf = "Energia (kcal)                          " + nutriValues[0] + "\n Água (g)	                               " + nutriValues[1] + "\n Proteínas (g)	                         " + nutriValues[2] + "\n Lípidos (g)	                             " + nutriValues[3] + "\n Hidratos de Carbono (g)	           " + nutriValues[4] + "\n Fibra (g)                                 " + nutriValues[5] + "\n Vitamina C (mg)                      " + nutriValues[6] + "\n Carotenos (µg)	                        " + nutriValues[7] + "\n Vitamina A (µg)	                      " + nutriValues[8] + "\n Potássio (mg)	                         " + nutriValues[9] + "\n Magnésio (mg)	                        " + nutriValues[10];
+        nutricional.setText(buf);
+        ImageView img = (ImageView) findViewById(R.id.image1);
+        img.setImageResource(p.getImage());
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_plant_page);
-        appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(true);
+        toolbar.setTitle(p.getNome());
 
-        binding.fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-    }
 
-    @Override
-    public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_plant_page);
-        return NavigationUI.navigateUp(navController, appBarConfiguration)
-                || super.onSupportNavigateUp();
+        setContentView(R.layout.activity_plant_page);
+
+
     }
 }

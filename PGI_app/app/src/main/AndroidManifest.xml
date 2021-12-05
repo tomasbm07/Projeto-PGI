@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PGI_app">
         <activity
+            android:name=".SearchPage"
+            android:exported="false" />
+        <activity
+            android:name=".AgriculturaRegenerativaPage"
+            android:exported="false" />
+        <activity
             android:name=".PlantPage"
             android:exported="false"
             android:label="@string/title_activity_plant_page"
