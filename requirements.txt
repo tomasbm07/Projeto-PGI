@@ -2,4 +2,4 @@ django
 gunicorn
 requests
 python-dotenv
-whitenoise==3.3.1
+whitenoise
