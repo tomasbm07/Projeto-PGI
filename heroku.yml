@@ -7,4 +7,4 @@ release:
 
 run:
   #worker: gunicorn --bind :$PORT --pythonpath Web_Server/Server projeto_pgi.wsgi
-  worker: python manage.py runserver 0.0.0.0:$PORT
+  worker: python manage.py runserver $PORT
