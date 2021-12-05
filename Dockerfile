@@ -14,8 +14,8 @@ RUN pip install -r requirements.txt
 
 WORKDIR /Server
 
-RUN adduser -D myuser
-USER myuser
+#RUN adduser -D myuser
+#USER myuser
 
 EXPOSE $PORT
 
