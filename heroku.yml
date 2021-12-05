@@ -6,5 +6,5 @@ release:
   image: worker
 
 run:
-  worker: gunicorn --bind :$PORT --pythonpath Web_Server/Server projeto_pgi.wsgi
-  #worker: python Web_Server/Server/manage.py runserver $PORT
+  #worker: gunicorn --bind :$PORT --pythonpath Web_Server/Server projeto_pgi.wsgi
+  worker: python manage.py runserver 0.0.0.0:$PORT
