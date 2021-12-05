@@ -1,0 +1,1 @@
+web: gunicorn --pythonpath Web_Server/Server projeto_pgi.wsgi --log-file -
