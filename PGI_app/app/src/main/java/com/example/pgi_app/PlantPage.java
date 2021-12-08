@@ -3,6 +3,7 @@ package com.example.pgi_app;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.example.pgi_app.databinding.ActivitySearchPageBinding;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.widget.Toolbar;
 import androidx.navigation.NavController;
@@ -25,12 +27,18 @@ public class PlantPage extends AppCompatActivity  {
 
     private AppBarConfiguration appBarConfiguration;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setContentView(R.layout.activity_plant_page);
         Intent i = getIntent();
-        Planta p = (Planta) ((Intent) i).getSerializableExtra("sampleObject");
+
+        if (i != null){
+            System.out.println("Oal");
+        }
+        Planta p = (Planta) getIntent().getSerializableExtra("sample object");
 
         TextView description = (TextView) findViewById(R.id.textView2);
         description.setText(p.getDescription());
@@ -43,13 +51,13 @@ public class PlantPage extends AppCompatActivity  {
         ImageView img = (ImageView) findViewById(R.id.image1);
         img.setImageResource(p.getImage());
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-
+        TextView toolbar_text = (TextView) findViewById(R.id.toolbar_title);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
-        toolbar.setTitle(p.getNome());
+        toolbar_text.setText(p.getNome());
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
 
-        setContentView(R.layout.activity_plant_page);
+
 
 
     }
