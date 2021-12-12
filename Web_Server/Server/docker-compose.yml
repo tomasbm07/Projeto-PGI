@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  
+  web_pgi:
+    build: .
+    container_name: web_pgi
+    volumes: 
+      - .:/Server
+    #env_file: .env
+    restart: unless-stopped
+    ports:
+      - 8050:8050
+
+  sqlitebrowser:
+    image: lscr.io/linuxserver/sqlitebrowser
+    container_name: sqlitebrowser
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+    volumes:
+      - ./db_gui:/config
+      - ./db.sqlite3:/db.sqlite3
+    ports:
+      - 3000:3000
+    restart: unless-stopped
+    depends_on:
+      - web_pgi
+
