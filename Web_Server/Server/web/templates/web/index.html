@@ -1,98 +1,141 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html>
+    
+<html style="height: 3200px;">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LHS9SH8BYN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-LHS9SH8BYN');
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
+    <title>BetterLand</title>
     <link rel="stylesheet" href={% static "bootstrap/css/bootstrap.min.css" %}>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
     <link rel="stylesheet" href={% static "fonts/font-awesome.min.css" %}>
+    <link rel="stylesheet" href={% static "css/Footer-Dark.css" %}>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href={% static  "css/untitled.css" %}>
 </head>
 
-<body>
-    <header class="text-center text-white masthead" style="background: url(&quot;{% static "img/Digging%20for%20Gould.jpeg" %} &quot;) center / cover no-repeat;height: 1000px;padding: 248px 0px 160px;">
-        <div class="masthead-content">
-            <div class="container" style="margin-top: 56px;">
-                <h1 data-aos="zoom-in-up" style="margin-top: -216px;color: darkgreen;height: 46px;font-size: 49px;padding-top: 8px;font-family: Catamaran, sans-serif;">BetterLand</h1>
-                <h1 data-aos="zoom-in-up" data-aos-delay="300" class="masthead-heading mb-0" style="margin-top: 126px;">Re-plant the earth</h1>
-                <h1 data-aos="zoom-in-up" data-aos-delay="600" class="masthead-heading mb-0" style="font-size: 35px;">Better Land, Better Life</h1><a class="btn btn-primary btn-xl rounded-pill mt-5" role="button" data-aos="zoom-in-up" data-aos-delay="900" href="#" style="font-size: 18.4px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="width: 26.3906px;height: 26.3906px;margin-bottom: 0px;margin-left: 0px;margin-right: 7px;padding-top: 0px;">
-                        <path d="M11 5C11 4.44772 11.4477 4 12 4C12.5523 4 13 4.44772 13 5V12.1578L16.2428 8.91501L17.657 10.3292L12.0001 15.9861L6.34326 10.3292L7.75748 8.91501L11 12.1575V5Z" fill="currentColor"></path>
-                        <path d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z" fill="currentColor"></path>
-                    </svg>Download Demo</a>
-                <p data-aos="zoom-in-up" data-aos-delay="900" style="color: var(--bs-gray-dark);font-weight: bold;margin-top: 3px;height: 25px;font-size: 20px;"><i class="fa fa-android" style="height: 23px;width: 20.5781px;margin-right: 6px;"></i>Para Android</p>
-            </div>
-        </div>
-    </header>
-    <section style="margin-top: 60px;">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1 style="text-align: left;font-size: 56px;"><strong>Quem Somos?</strong></h1>
-                    <p style="font-size: 22px;">Somos 4 estudantes da Universidade de Coimbra a desenvolver uma aplicação inovadora que permite a qualquer utilizador criar uma horta regenerativa no quintal ou na varanda sem conhecimento prévio sobre agricultura.<br>Pretendemos tornar o mundo mais sunstentável onde a agricultura industrial é causadora de grandes emissões de dióxido de carbono, desperdício de água e destruição de ecossistemas.</p>
+<body style="height: 3200px;">
+    <main style="height: 3200px;">
+        <header class="text-center text-white masthead" style="background: url(&quot;{% static "img/Digging%20for%20Gould.jpeg" %}&quot;) bottom / cover no-repeat;border-width: 0px;border-style: none;height: 1000px;margin-bottom: 100px;margin-top: -51px;">
+            <div class="masthead-content p-5" style="margin: -221px;">
+                <div class="container" style="margin-top: 56px;">
+                    <div class="row justify-content-center" data-aos="zoom-in-up">
+                        <div class="col-auto"><img src={% static "img/Logo.png" %}></div>
+                        <div class="col-auto align-self-center">
+                            <h1 style="margin-top: 0px;color: darkgreen;font-size: 74px;padding-top: 0px;font-family: Catamaran, sans-serif;">BetterLand</h1>
+                        </div>
+                    </div>
+                    <h1 data-aos="zoom-in-up" data-aos-delay="300" class="masthead-heading mb-0" style="margin-top: 64px;">Re-plant the earth</h1>
+                    <h1 data-aos="zoom-in-up" data-aos-delay="600" class="masthead-heading mb-0" style="font-size: 35px;">Better Land, Better Life</h1>
+                    <div data-aos="zoom-in-up" data-aos-delay="900"><a class="btn btn-primary btn-lg btn-xl rounded-pill mt-5" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-2" href="#collapse-2" role="button" style="font-size: 19.4px;" onClick="ga('send', 'event', 'Button', 'Click', 'Call to Action');">Try demo<i class="fa fa-arrow-down"></i></a>
+                        <div class="collapse" id="collapse-2">
+                            <p style="font-size: 25px;font-weight: bold;color: var(--bs-body-bg);">Agradecemos imenso o seu interesse na nossa aplicação, estamos em progresso de criação, pelo que este botão serve meramente para fins estatísticos, assim que finalizar-mos atualizaremos a página.<br>Saudações agrícolas.</p>
+                        </div>
+                    </div>
+                    <p data-aos="zoom-in-up" data-aos-delay="900" style="color: var(--bs-gray-dark);font-weight: bold;margin-top: 3px;height: 25px;font-size: 20px;"><i class="fa fa-android" style="height: 23px;width: 20.5781px;margin-right: 6px;"></i>Para Android</p>
                 </div>
             </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6 order-lg-1">
-                    <div class="p-5"><img class="rounded-circle img-fluid" data-aos="zoom-in-up" src={% static "img/02.jpg" %}></div>
+        </header>
+        <section style="margin-top: 60px;">
+            <div class="container" style="margin-top: 0px;">
+                <div class="row" data-aos="zoom-in-up" style="margin-top: 0px;padding-top: 0px;">
+                    <div class="col">
+                        <h1 style="text-align: left;font-size: 56px;"><strong>Quem Somos?</strong></h1>
+                        <p style="font-size: 22px;">Somos 4 estudantes universitários a desenvolver uma aplicação inovadora, que permitirá a qualquer utilizador de qualquer parte do país criar uma horta sustentável com base nos princípios de agricultura regenerativa, no quintal ou na varanda, sem conhecimento prévio sobre agricultura.<br>Pretendemos tornar o mundo mais sunstentável, onde a agricultura industrial é causadora de grandes emissões de dióxido de carbono, desperdício de água e destruição de ecossistemas. Com a nossa aplicação poderá cultivar o que consome sem impacto ambiental.&nbsp;</p>
+                    </div>
                 </div>
-                <div class="col-lg-6 order-lg-2">
-                    <div class="p-5">
-                        <h2 class="display-4">Guias Agricultura Regenerativa</h2>
-                        <p style="font-size: 20px;">Para ensinar as práticas de agricultura regenerativa propomos disponibilizar guias interativos com vídeo, texto e imagem com base em informação científica.<br>Nos guias pretendemos mostrar desde o mais básico, como semear, até ao mais complexo, gerir o ecossitema.</p>
+                <div class="row align-items-center" data-aos="zoom-in-up">
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5"><img class="rounded-circle img-fluid" src={% static "img/Guarde%20la%20ilustración%20del%20concepto%20de%20planeta%20con%20personas%20y%20globo%20Vector%20Premium.jpg" %}></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5">
+                            <h2 class="display-4">Guias Agricultura Regenerativa</h2>
+                            <p style="font-size: 20px;">Para ensinar as práticas de agricultura regenerativa no seu dia-a-dia propomos disponibilizar guias interativos com vídeo, texto e imagem com base em informação científica.<br>Nos guias pretendemos mostrar desde o mais básico, como semear, até ao mais complexo, gerir o ecossitema.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 order-lg-2">
-                    <div class="p-5"><img class="rounded-circle img-fluid" src={% static "img/03.jpg" %}></div>
-                </div>
-                <div class="col-lg-6 order-lg-1">
-                    <div class="p-5">
-                        <h2 class="display-4">Comunidade</h2>
-                        <p style="font-size: 20px;">De modo a dinamizar o uso da aplicação, um espaço para partilhar os seus progressos com outros entusiastas. Este espaço permitirá partilhar atualizações da sua horta e dúvidas que possa ter.&nbsp;</p>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row align-items-center" data-aos="zoom-in-up">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="rounded-circle img-fluid" src={% static "img/Happy%20young%20employees%20giving%20support%20and%20help%20each%20other%20flat%20vector%20illustration_%20Business%20team%20working%20together%20for%20success%20and%20growing.jpg" %}></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">Comunidade</h2>
+                            <p style="font-size: 20px;">De modo a dinamizar o uso da aplicação , terá um espaço para partilhar os seus progressos e dúvidas com outros entusiastas. Melhorando assim a sua experiência no atingir de conquistas, bem como ultrapassar os obstáculos que poderão surgir.&nbsp;</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <div class="row row align-items-center">
-                <div class="col">
-                    <div style="width: 546px;height: 546px;"><img class="rounded-circle img-fluid mx-auto d-block" src={% static "img/horta.jpeg" %} style="width: 450px;height: 450px;"></div>
-                </div>
-                <div class="col">
-                    <div style="width: 546px;height: 283px;">
-                        <h1 style="font-size: 56px;width: 382px;margin-right: 0px;margin-left: 47px;margin-top: 18px;">Guia Horta no Apartamento</h1>
-                        <p style="width: 502px;margin-left: 48px;margin-top: 21px;font-size: 20px;">Para os utilizadores restringidos a vasos, haverá também uma área com guias igualmente completos focados em plantar em vasos.&nbsp;</p>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row row align-items-center" data-aos="zoom-in-up">
+                    <div class="col align-items-center">
+                        <div class="p-5" style="width: 546px;height: 546px;"><img class="rounded-circle img-fluid" src={% static "img/Baixe%20Par,%20Cuidando,%20De,%20Plantas%20gratuitamente.jpg" %} style="width: 450px;"></div>
+                    </div>
+                    <div class="col">
+                        <div style="width: 546px;height: 283px;">
+                            <h1 style="font-size: 56px;width: 382px;margin-right: 0px;margin-left: 47px;margin-top: 18px;">Guia Horta no Apartamento</h1>
+                            <p style="width: 502px;margin-left: 48px;margin-top: 21px;font-size: 20px;">Para os utilizadores que habitam em espaços mais reduzidos, como apartamentos, haverá uma área com guias igualmente completos, focados em plantar em vasos.&nbsp;</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <div class="row" data-aos="zoom-in-up" data-aos-delay="1200" style="height: 246px;">
-                <div class="col text-center" style="height: 62px;"><button class="btn btn-primary" type="button" style="margin: 17px 0px 0px;margin-top: 22px;font-size: 20px;padding: 6px;color: var(--bs-body-bg);background: var(--bs-gray-dark);border-color: var(--bs-gray-900);">Contacte-nos</button>
-                    <p style="margin-top: 24px;font-size: 22px;font-weight: bold;">Fique a par de todas as novidades da nossa aplicação.<br>Dê as suas sugestões e críticas.</p>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row justify-content-center align-items-start" data-aos="zoom-in-up">
+                    <div class="col text-start text-center" style="height: 62px;">
+                        <div><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-1" href="#collapse-1" role="button" style="font-weight: bold;color: var(--bs-body-bg);background: var(--bs-body-color);font-size: 24px;">Contacte-nos</a>
+                            <div class="collapse text-center" id="collapse-1" style="height: 201px;">
+                                <form method="post">
+                                    {% csrf_token %}
+                                    <div class="row justify-content-center" style="height: 102px;">
+                                        <div class="col-auto text-start align-self-center" style="height: 31px;">
+                                            <p class="text-start" style="font-weight: bold;font-size: 18px;">Nome:</p>
+                                        </div>
+                                        <div class="col-auto align-self-center" style="font-size: 20px;"><input type="text" id="name" name="name" style="width: 300px;"></div>
+                                        <div class="col-auto text-start align-self-center" style="height: 27px;">
+                                            <p style="font-size: 18px;font-weight: bold;">E-Mail:</p>
+                                        </div>
+                                        <div class="col-auto align-self-center"><input type="text" id="email" name="email" style="font-size: 20px;width: 350px;"></div>
+                                    </div>
+                                    <div class="row justify-content-center align-items-center">
+                                        <div class="col-auto">
+                                            <p style="font-weight: bold;font-size: 18px;">Mensagem:</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col align-self-start"><textarea spellcheck="true" style="height: 130px;width: 800px" id="msg" name="msg" type="text"></textarea></div>
+                                    </div>
+                                    <div class="row">
+                                            <div class="col"><button class="btn btn-primary" id="form" name="form" type="submit" value="true">Submit</button></div>                                        
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <footer class="py-5 bg-black">
-        <div class="container">
-            <p class="text-center text-white m-0 small" style="text-align: left;font-weight: bold;">Aviso legal: os conteúdos constantes website foram realizados<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;por alunos no âmbito de uma disciplina Processos de gestão e<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inovação do 3 º ano da licenciatura de Engenharia Informática<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;da Faculdade de Ciências e Tecnologia da Universidade de<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coimbra ( pelo que a FCTUC não se responsabiliza pelo<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;seu conteúdo</p>
-        </div>
-    </footer>
+        </section>
+    </main>
     <script src="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
     <script src="{% static "js/bs-init.js" %}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
