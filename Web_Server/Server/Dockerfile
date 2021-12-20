@@ -10,7 +10,7 @@ COPY . .
 
 EXPOSE 8050
 
-WORKDIR Server/
+#WORKDIR Server/
 
 CMD python manage.py runserver 0.0.0.0:8050
 

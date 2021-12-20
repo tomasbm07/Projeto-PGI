@@ -102,18 +102,36 @@
             <div class="row justify-content-center">
                 <div class="col-auto"><button class="btn btn-primary" type="button" style="font-weight: bold;font-size: 20px;">Contacte-nos</button></div>
             </div>
-            <form method="post">
+            <form action="" method="post">
+
                 {% csrf_token %}
+                {% for field in form %}
+                    <div class="row justify-content-center" style="margin:1% 20% 1% 20%;" >
+                        {{ field.errors }}
+                        {{ field.label_tag }} {{ field }}
+                        {% if field.help_text %}
+                        <p class="help">{{ field.help_text|safe }}</p>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+                <div class="row justify-content-center" style="margin-top: 20px;">
+                    <div class="col-auto"><button class="btn btn-primary" type="submit" name="form" id="form" value="true">Submit</button></div>
+                </div>
+                {% comment %} 
                 <div class="container">
                     <div class="row justify-content-center" style="height: 102px;">
                         <div class="col-auto text-start align-self-center" style="height: 31px;">
                             <p class="text-start" style="font-weight: bold;font-size: 18px;">Nome:</p>
                         </div>
-                        <div class="col-auto align-self-center" style="font-size: 20px;"><input type="text" id="name" name="name" style="width: 300px;"></div>
+                        {{ form.name.errors }}
+                        <div class="col-auto align-self-center" style="font-size: 20px;"></div>
+                        {{ form.name }}
                         <div class="col-auto offset-1 text-start align-self-center" style="height: 27px;">
                             <p style="font-size: 18px;font-weight: bold;">E-Mail:</p>
                         </div>
-                        <div class="col-auto align-self-center"><input type="text" id="email" name="email" style="font-size: 20px;width: 350px;"></div>
+                        {{ form.email.errors }}
+                        <div class="col-auto align-self-center"></div>
+                        {{ form.email}}
                     </div>
                     <div class="row justify-content-center align-items-center">
                         <div class="col-auto">
@@ -121,12 +139,15 @@
                         </div>
                     </div>
                     <div class="row justify-content-center">
-                        <div class="col-auto"><textarea spellcheck="true" id="msg" name="msg" style="height: 130px;width: 800px;"></textarea></div>
+                        {{ form.message.errors }}
+                        <div class="col-auto"></div>
+                        {{ form.message }}
                     </div>
                     <div class="row justify-content-center" style="margin-top: 20px;">
                         <div class="col-auto"><button class="btn btn-primary" type="submit" name="form" id="form" value="true">Submit</button></div>
                     </div>
-                </div>
+                </div> 
+                {% endcomment %}
             </form>
         </section>
     </main>
