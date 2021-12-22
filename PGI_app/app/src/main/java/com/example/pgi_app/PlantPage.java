@@ -3,12 +3,13 @@ package com.example.pgi_app;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.pgi_app.databinding.ActivitySearchPageBinding;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,10 +19,6 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-
-import com.example.pgi_app.databinding.ActivityPlantPageBinding;
-
-import java.io.Serializable;
 
 public class PlantPage extends AppCompatActivity  {
 
@@ -35,9 +32,7 @@ public class PlantPage extends AppCompatActivity  {
         setContentView(R.layout.activity_plant_page);
         Intent i = getIntent();
 
-        if (i != null){
-            System.out.println("Oal");
-        }
+
         Planta p = (Planta) getIntent().getSerializableExtra("sample object");
 
         TextView description = (TextView) findViewById(R.id.textView2);
@@ -55,10 +50,23 @@ public class PlantPage extends AppCompatActivity  {
         setSupportActionBar(toolbar);
         toolbar_text.setText(p.getNome());
         getSupportActionBar().setDisplayShowTitleEnabled(false);
+        final FloatingActionButton button =  findViewById(R.id.fab_list);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(Planta.minhaHorta.contains(p)){
+                    Toast.makeText(getApplicationContext(),p.getNome() + " already added to Minhas Hortas", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    Planta.minhaHorta.add(p);
+                    Toast.makeText(getApplicationContext(),p.getNome() + " added to Minhas Hortas", Toast.LENGTH_SHORT).show();
+
+                }
+            }
 
 
 
+            });
+        }
 
-
-    }
 }

@@ -37,7 +37,7 @@ public class SearchPage extends AppCompatActivity {
                 String name = (String) ((TextView) v).getText();
                 Toast.makeText(getApplicationContext(),name + " selected", Toast.LENGTH_SHORT).show();
                 Planta p = Planta.getPlanta(name);
-                System.out.println(p.getCuidados());
+                //System.out.println(p.getCuidados());
                 i.putExtra("sample object", p);
                 startActivity(i);
 

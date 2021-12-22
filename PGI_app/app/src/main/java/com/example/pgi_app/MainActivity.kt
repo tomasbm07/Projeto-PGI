@@ -3,16 +3,26 @@ package com.example.pgi_app
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Button
 import android.widget.Toast
 import android.widget.Toolbar
+import com.example.pgi_app.R.layout.activity_search_page
 import java.io.Serializable
+import android.view.ViewGroup
 
-class MainActivity : AppCompatActivity() {
+import android.view.LayoutInflater
+
+
+
+class MainActivity : BasicActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+       // val inflater = layoutInflater
+        //inflater.inflate(R.layout.agric, findViewById<View>(R.id.nav_view) as ViewGroup)
+        setContentView(R.layout.agric)
         Toast.makeText(applicationContext, "Application started! Welcome!", Toast.LENGTH_SHORT).show()
-        val intent = Intent(this, SearchPage::class.java)
+        var intent : Intent
 
 
         val f = floatArrayOf(20.1F,20.2F,20F,20F,20F,20F,20F,20F,20F,20F,20F);
@@ -27,11 +37,48 @@ class MainActivity : AppCompatActivity() {
         val u = Planta("Milho","Planta amarela","I dont know",f,R.drawable.milho);
         Planta.plantList.add(u);
 
-
         // descomentar linha seguinte para testar pagina das plantas
         //startActivity(intent)
+       val button = findViewById<View>(R.id.button5) as Button
+        button.setOnClickListener {
+            intent = Intent(this, SearchPage::class.java)
+            startActivity(intent)
+            Toast.makeText(
+                applicationContext,
+                "Insira o nome da planta",
+                Toast.LENGTH_SHORT
+            ).show()
+        }
 
+        val button1 = findViewById<View>(R.id.button) as Button
+        button1.setOnClickListener {
+            intent = Intent(this, TiposdeAgricultura::class.java)
+            //System.out.println(p.getCuidados());
+            intent.putExtra("sample object", 1)
+            startActivity(intent)
+            Toast.makeText(
+                applicationContext,
+                "Agricultura regenrativa",
+                Toast.LENGTH_SHORT
+            ).show()
+        }
 
-       // Toolbar toolbar = findViewById(R.layout.toolbar)
+        val button2 = findViewById<View>(R.id.button4) as Button
+        button2.setOnClickListener {
+            intent = Intent(this, TiposdeAgricultura::class.java)
+            //System.out.println(p.getCuidados());
+            intent.putExtra("sample object", 2)
+            startActivity(intent)
+            Toast.makeText(
+                applicationContext,
+                "Horta no apartamento",
+                Toast.LENGTH_SHORT
+            ).show()
+        }
+
     }
-}
+
+
+
+        // Toolbar toolbar = findViewById(R.layout.toolbar)
+    }
