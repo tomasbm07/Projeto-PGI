@@ -54,14 +54,8 @@ public class PlantPage extends AppCompatActivity  {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(Planta.minhaHorta.contains(p)){
-                    Toast.makeText(getApplicationContext(),p.getNome() + " already added to Minhas Hortas", Toast.LENGTH_SHORT).show();
-                }
-                else{
-                    Planta.minhaHorta.add(p);
+                    Horta.Hortas.add(new Horta(p,p.getImage()));
                     Toast.makeText(getApplicationContext(),p.getNome() + " added to Minhas Hortas", Toast.LENGTH_SHORT).show();
-
-                }
             }
 
 

@@ -12,7 +12,7 @@ public class Planta implements Serializable {
         return  nome ;
     }
 
-    public static ArrayList<Planta> minhaHorta = new ArrayList<Planta>();
+    //public static ArrayList<Planta> minhaHorta = new ArrayList<Planta>();
 
 
     private String nome;

@@ -12,7 +12,8 @@ import java.io.Serializable
 import android.view.ViewGroup
 
 import android.view.LayoutInflater
-
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 
 class MainActivity : BasicActivity() {
@@ -21,6 +22,7 @@ class MainActivity : BasicActivity() {
        // val inflater = layoutInflater
         //inflater.inflate(R.layout.agric, findViewById<View>(R.id.nav_view) as ViewGroup)
         setContentView(R.layout.agric)
+
         Toast.makeText(applicationContext, "Application started! Welcome!", Toast.LENGTH_SHORT).show()
         var intent : Intent
 
@@ -36,6 +38,18 @@ class MainActivity : BasicActivity() {
         Planta.plantList.add(t);
         val u = Planta("Milho","Planta amarela","I dont know",f,R.drawable.milho);
         Planta.plantList.add(u);
+
+        val z = Horta(u,u.getImage());
+        val y = Horta(t,t.getImage());
+        val x = Horta(q,q.getImage());
+        Horta.Hortas.add(z)
+        Horta.Hortas.add(y)
+        Horta.Hortas.add(x)
+        val recyclerView = findViewById<RecyclerView>(R.id.rec);
+        val adapter = RecyclingViewAdapter(this,Horta.Hortas, 0)
+        recyclerView.setAdapter(adapter)
+        recyclerView.setLayoutManager(LinearLayoutManager(this))
+
 
         // descomentar linha seguinte para testar pagina das plantas
         //startActivity(intent)
@@ -58,7 +72,7 @@ class MainActivity : BasicActivity() {
             startActivity(intent)
             Toast.makeText(
                 applicationContext,
-                "Agricultura regenrativa",
+                "Agricultura regenerativa",
                 Toast.LENGTH_SHORT
             ).show()
         }
@@ -74,6 +88,12 @@ class MainActivity : BasicActivity() {
                 "Horta no apartamento",
                 Toast.LENGTH_SHORT
             ).show()
+        }
+        val button3 = findViewById<View>(R.id.button6) as Button
+        button3.setOnClickListener {
+            intent = Intent(this, MinhasHortas::class.java)
+            startActivity(intent)
+
         }
 
     }
