@@ -1,12 +1,13 @@
 package com.example.pgi_app;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Horta {
+public class Horta implements Serializable {
     private Planta p;
     private int image;
-    public static ArrayList<Horta> Hortas = new ArrayList<Horta>();
+    public static ArrayList<Horta> Hortas;
     Date data = new Date();
 
     public Horta(com.example.pgi_app.Planta p, int image) {

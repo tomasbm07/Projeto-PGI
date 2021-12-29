@@ -50,12 +50,16 @@ public class PlantPage extends AppCompatActivity  {
         setSupportActionBar(toolbar);
         toolbar_text.setText(p.getNome());
         getSupportActionBar().setDisplayShowTitleEnabled(false);
+
         final FloatingActionButton button =  findViewById(R.id.fab_list);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                    Horta.Hortas.add(new Horta(p,p.getImage()));
-                    Toast.makeText(getApplicationContext(),p.getNome() + " added to Minhas Hortas", Toast.LENGTH_SHORT).show();
+                Horta.Hortas.add(new Horta(p,p.getImage()));
+                //MainActivity.adapter.horta.add(Horta.Hortas.size()-1, Horta.Hortas.get(Horta.Hortas.size() - 1));
+                MainActivity.adapter.notifyItemInserted(Horta.Hortas.size()-1);
+                //adapter.notifyItemRangeInserted(Horta.Hortas.size()-1, Horta.Hortas.size());
+                Toast.makeText(getApplicationContext(),p.getNome() + " added to Minhas Hortas", Toast.LENGTH_SHORT).show();
             }
 
 

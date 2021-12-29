@@ -10,9 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PGI_app">
         <activity
+            android:name=".HortaActivity"
+            android:exported="false" />
+        <activity
             android:name=".MinhasHortas"
             android:exported="false"
-            android:theme="@style/Theme.PGI_app.NoActionBar"/>
+            android:theme="@style/Theme.PGI_app.NoActionBar" />
         <activity
             android:name=".BasicActivity"
             android:exported="false" />

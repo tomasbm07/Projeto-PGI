@@ -4,16 +4,12 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Planta implements Serializable {
-
-    public static ArrayList<Planta> plantList = new ArrayList<Planta>();
+    static public ArrayList<Planta> plantList = new ArrayList<Planta>();
 
     @Override
     public String toString() {
         return  nome ;
     }
-
-    //public static ArrayList<Planta> minhaHorta = new ArrayList<Planta>();
-
 
     private String nome;
     private String description;
