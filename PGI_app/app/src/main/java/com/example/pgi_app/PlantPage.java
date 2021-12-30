@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+import com.squareup.picasso.Picasso;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -44,7 +45,8 @@ public class PlantPage extends AppCompatActivity  {
         String buf = "Energia (kcal)                          " + nutriValues[0] + "\n Água (g)	                               " + nutriValues[1] + "\n Proteínas (g)	                         " + nutriValues[2] + "\n Lípidos (g)	                             " + nutriValues[3] + "\n Hidratos de Carbono (g)	           " + nutriValues[4] + "\n Fibra (g)                                 " + nutriValues[5] + "\n Vitamina C (mg)                      " + nutriValues[6] + "\n Carotenos (µg)	                        " + nutriValues[7] + "\n Vitamina A (µg)	                      " + nutriValues[8] + "\n Potássio (mg)	                         " + nutriValues[9] + "\n Magnésio (mg)	                        " + nutriValues[10];
         nutricional.setText(buf);
         ImageView img = (ImageView) findViewById(R.id.image1);
-        img.setImageResource(p.getImage());
+        Picasso.get().load(p.getImage()).into(img);
+        //img.setImageResource(p.getImage());
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         TextView toolbar_text = (TextView) findViewById(R.id.toolbar_title);
         setSupportActionBar(toolbar);

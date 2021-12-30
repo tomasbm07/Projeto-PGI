@@ -15,9 +15,9 @@ public class Planta implements Serializable {
     private String description;
     private String cuidados;
     private float[] nutriValues;
-    private int image;
+    private String image;
 
-    public Planta(String nome, String description, String cuidados, float[] nutriValues, int image) {
+    public Planta(String nome, String description, String cuidados, float[] nutriValues, String image) {
         this.description = description;
         this.cuidados = cuidados;
         this.nome = nome;
@@ -66,11 +66,11 @@ public class Planta implements Serializable {
         this.nutriValues = nutriValues;
     }
 
-    public int getImage() {
+    public String getImage() {
         return image;
     }
 
-    public void setImage(int image) {
+    public void setImage(String image) {
         this.image = image;
     }
 }

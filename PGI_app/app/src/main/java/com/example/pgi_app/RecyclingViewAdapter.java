@@ -9,6 +9,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 
 public class RecyclingViewAdapter extends RecyclerView.Adapter<RecyclingViewAdapter.MyViewHolder> {
@@ -70,7 +73,8 @@ public class RecyclingViewAdapter extends RecyclerView.Adapter<RecyclingViewAdap
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         //assigning values to the views created in the recycler_view_row layout file
         //based on the position of the recycler view
-        holder.image.setImageResource(Horta.Hortas.get(position).getImage());
+        //holder.image.setImageResource(Horta.Hortas.get(position).getImage());
+        Picasso.get().load(Horta.Hortas.get(position).getP().getImage()).into(holder.image);
         holder.nomeHorta.setText(Horta.Hortas.get(position).getP().getNome());
         holder.dataCriacao.setText("Criado: " + Horta.Hortas.get(position).getData().toString().substring(0,16));
 

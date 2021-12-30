@@ -6,11 +6,11 @@ import java.util.Date;
 
 public class Horta implements Serializable {
     private Planta p;
-    private int image;
+    private String image;
     public static ArrayList<Horta> Hortas;
     Date data = new Date();
 
-    public Horta(com.example.pgi_app.Planta p, int image) {
+    public Horta(com.example.pgi_app.Planta p, String image) {
         this.p = p;
         this.image = image;
         this.data = new Date();
@@ -24,11 +24,11 @@ public class Horta implements Serializable {
         this.p = p;
     }
 
-    public int getImage() {
+    public String getImage() {
         return image;
     }
 
-    public void setImage(int image) {
+    public void setImage(String image) {
         this.image = image;
     }
 
