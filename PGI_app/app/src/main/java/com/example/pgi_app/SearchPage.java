@@ -5,7 +5,6 @@ import androidx.appcompat.widget.SearchView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,7 +13,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-import java.io.Serializable;
 
 public class SearchPage extends AppCompatActivity {
 
@@ -37,7 +35,7 @@ public class SearchPage extends AppCompatActivity {
                 String name = (String) ((TextView) v).getText();
                 Toast.makeText(getApplicationContext(),name + " selected", Toast.LENGTH_SHORT).show();
                 Planta p = Planta.getPlanta(name);
-                System.out.println(p.getCuidados());
+                //System.out.println(p.getCuidados());
                 i.putExtra("sample object", p);
                 startActivity(i);
 
